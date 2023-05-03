@@ -1,0 +1,260 @@
+@font-face {
+    font-family: 'SLEMAN';
+    src: url('SLEMAN-DEMO.woff2') format('woff2'),
+        url('SLEMAN-DEMO.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+section {
+    width: 100%;
+    transition: 0.5s;
+}
+
+
+.hamburger {
+    position: relative;
+    display: none;
+    width: 35px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    margin: 6px 0px;
+    -webkit-transition: 0.5s ease;
+    transition: 0.4s ease;
+}
+
+.hamburger.is-active:before {
+    -webkit-transform: rotate(-45deg) translate(-4px, 6px);
+    transform: rotate(-45deg) translate(-4px, 6px);
+}
+
+.hamburger.is-active:after {
+    -webkit-transform: rotate(45deg) translate(-5px, -8px);
+    transform: rotate(45deg) translate(-5px, -8px);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+/* this is a test git shit */
+/* .hamburger {
+    position: relative;
+    display: none;
+    width: 35px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    margin: 6px 0px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+.hamburger.is-active:before {
+    -webkit-transform: rotate(-45deg) translate(-4px, 6px);
+    transform: rotate(-45deg) translate(-4px, 6px);
+}
+.hamburger.is-active:after {
+    -webkit-transform: rotate(45deg) translate(-5px, -8px);
+    transform: rotate(45deg) translate(-5px, -8px);
+}
+.hamburger.is-active .bar {
+    opacity: 0;
+} */
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+div,
+article,
+section,
+dl,
+dt,
+dd,
+table,
+tr,
+td,
+ul,
+ol,
+li,
+p,
+span,
+small,
+em,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav,
+figure,
+figcaption {
+    padding: 0;
+    margin: 0;
+}
+
+/* cookie consent */
+.cc-animate.cc-revoke.cc-bottom {
+    font-size: 14px;
+    padding: 5px 10px;
+    position: fixed;
+    display: block !important;
+    transform: none !important;
+    bottom: 0 !important;
+    left: 20px !important;
+}
+
+/* call to action */
+.destroy-on-load,
+.cta {
+    display: none;
+}
+
+:root {
+    --primary: #FFFFFF;
+    --secondary: -webkit-linear-gradient(#FEE680, #FAC232, #FA9300);
+    --tertiary: linear-gradient(to bottom, #646464, #484848, #2F2F2F);
+}
+
+body {
+    background: #000000;
+    max-width: 1920px;
+    min-width: 1200px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+html {
+    cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym46.cur), auto !important;
+}
+
+header {
+    background: url('../images/common/homeBG.jpg')no-repeat;
+    background-size: cover;
+}
+
+nav {
+    max-width: 1400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 15px;
+    margin: 0 auto;
+}
+
+nav h2 {
+    font-family: 'Barlow';
+    font-size: clamp(1.25rem, 1.25rem + 0.7813vw, 2.1875rem);
+    font-weight: 600;
+    color: ;
+    padding: 15px;
+    letter-spacing: 3px;
+}
+
+nav img {
+    width: clamp(100px, 100%, 100px);
+}
+
+span.gone {
+    -webkit-text-decoration-line: line-through;
+    text-decoration-line: line-through;
+    text-decoration-color: #880808;
+    color: transparent;
+    transition: 0.5s ease-in-out;
+}
+
+span:hover {
+    color: #880808;
+    transition: 0.5s ease-in-out;
+    -webkit-text-decoration-line: unset;
+    text-decoration-line: unset;
+}
+
+ul {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    letter-spacing: 1px;
+    background: #880808;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.belief {
+    text-align: center;
+    padding: 0 0 100px;
+}
+
+.belief a {
+    color: #880808;
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 25px;
+}
+
+.belief h3 {
+    max-width: 1000px;
+    width: 100%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: clamp(1.5rem, 1.5rem + 1.875vw, 3.75rem);
+    letter-spacing: 5px;
+    text-align: center;
+    line-height: 5.5rem;
+    margin: 0 auto;
+    padding: 235px 0 20px;
+}
+
+.belief h3 span {
+    color: #880808;
+}
