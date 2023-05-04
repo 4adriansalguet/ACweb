@@ -36,6 +36,14 @@
 	<!-- <li <?php $this->helpers->isActiveMenu("home"); ?> class="btn"><a  href="home#content">HOME</a></li>
 	<li <?php $this->helpers->isActiveMenu("about"); ?>><a href="about#content">ABOUT US</a></li> -->
 	<header>
+		<div class="slider">
+		<div class="slide">
+			</div>
+		<div class="slide">
+			</div>
+		<div class="slide">
+			</div>
+		</div>
 		<div id="nav-container">
 			<nav>
 				<h2 class="fear">
@@ -60,6 +68,8 @@
 			</a>
 
 		</div>
+
+	
 
 
 

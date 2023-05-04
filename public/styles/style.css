@@ -171,10 +171,70 @@ html {
     cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym46.cur), auto !important;
 }
 
-header {
-    background: url('../images/common/homeBG.jpg')no-repeat;
+.slideShow img {
+    width: 100%;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: 1.4} 
+    to {opacity: 1}
+  }
+
+  .slider {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+   }
+    
+   .slider .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: slider 17.5s infinite;
+   }
+    
+   .slider .slide:nth-child(1) {
+      background-image: url('../images/common/homeBG.jpg');
+      animation-delay: 0s;
+   }
+   
+   .slider .slide:nth-child(2) {
+      background-image: url('../images//common/homeBG1.jpg');
+      animation-delay: -3.5s;
+   }
+   
+   .slider .slide:nth-child(3) {
+      background-image: url('../images/common/homeBG2.jpg');
+      animation-delay: -6s;
+   }
+
+   @keyframes slider {
+    0%, 11%, 100% {
+      transform: translateX(0);
+      animation-timing-function: ease;
+    }
+    20% {
+      transform: translateX(-100%);
+      animation-timing-function: step-end;
+    }
+    91% {
+      transform: translateX(100%);
+      animation-timing-function: ease;
+    }
+   }
 
 nav {
     max-width: 1400px;
@@ -187,7 +247,7 @@ nav {
 }
 
 nav h2 {
-    font-family: 'Barlow';
+    font-family: 'Montserrat';
     font-size: clamp(1.25rem, 1.25rem + 0.7813vw, 2.1875rem);
     font-weight: 600;
     color: ;
@@ -253,6 +313,7 @@ ul {
     line-height: 5.5rem;
     margin: 0 auto;
     padding: 235px 0 20px;
+    color: #131516;
 }
 
 .belief h3 span {
