@@ -171,7 +171,12 @@ html {
     cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym46.cur), auto !important;
 }
 
-.slideShow img {
+header {
+    background: url('../images/common/homeBG.jpg')no-repeat;
+    background-size: cover;
+}
+
+/* .slideShow img {
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -181,11 +186,24 @@ html {
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
-  }
+  } */
   
   @keyframes fade {
     from {opacity: 1.4} 
     to {opacity: 1}
+  }
+
+  .rotate {
+    animation: rotation 7s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
   }
 
   .slider {
@@ -205,36 +223,7 @@ html {
     background-position: center;
     animation: slider 17.5s infinite;
    }
-    
-   .slider .slide:nth-child(1) {
-      background-image: url('../images/common/homeBG.jpg');
-      animation-delay: 0s;
-   }
-   
-   .slider .slide:nth-child(2) {
-      background-image: url('../images//common/homeBG1.jpg');
-      animation-delay: -3.5s;
-   }
-   
-   .slider .slide:nth-child(3) {
-      background-image: url('../images/common/homeBG2.jpg');
-      animation-delay: -6s;
-   }
 
-   @keyframes slider {
-    0%, 11%, 100% {
-      transform: translateX(0);
-      animation-timing-function: ease;
-    }
-    20% {
-      transform: translateX(-100%);
-      animation-timing-function: step-end;
-    }
-    91% {
-      transform: translateX(100%);
-      animation-timing-function: ease;
-    }
-   }
 
 nav {
     max-width: 1400px;
